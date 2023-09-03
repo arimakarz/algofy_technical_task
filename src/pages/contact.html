@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header" >
+        <a class="main-logo" href="./index.html" >
+            <img class="nav-logo" src="./../assets/logo.png" alt="No picture"/>
+        </a>
+        <nav id="nav" class="main-nav" >
+          <div class="nav-links" >
+            <a class="link-item" href="./index.html" >HOME</a>
+            <a class="link-item" href="./about.html" >ABOUT</a>
+            <a class="link-item" href="./contact.html" >CONTACT</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
+    
+    <div>
+        <fieldset id="contactForm" class="contact-form">
+            <legend>Let's get in touch</legend>
+            <form action="">
+                <div class="form-item">
+                    <!-- <label for="name">Name: </label> -->
+                    <input id="name" class="formitem-text" type="name" placeholder="Name">
+                    <div>
+                        <span class="form-error" id="emptyName">Please complete your name.</span>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <!-- <label for="email">Email: </label> -->
+                    <input id="email" class="formitem-text" type="email" placeholder="Email">
+                    <div>
+                        <span class="form-error" id="emptyEmail">Please complete your email.</span>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="message" style="font-size:16px;">Max. 500 characters </label>
+                    <textarea id="message" class="formitem-message" type="message" placeholder="Message" rows="5" onInput="auto_height(this)" maxlength="500"></textarea>
+                    <div>
+                        <span class="form-error" id="emptyMessage">Please complete your message. Thanks!</span>
+                    </div>
+                </div>
+                <button id="submit" class="form-button"> Submit </button>
+            </form>
+        </fieldset>
+        <span id="contactSuccess" class="contact-success">
+            <p>Thank you for contacting us. We'll be shortly in touch.</p>
+        </span>
+    </div>
+
+    <p class="footer">By <span>Ariela Makarz</span></p>
+
+    <script src="./../js/file.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+</html>

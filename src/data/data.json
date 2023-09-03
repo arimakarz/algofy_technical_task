@@ -1,0 +1,49 @@
+[
+    {
+      "id": 1,
+      "title": "Violeta Vinos",
+      "description": "Wine shop. Ecommerce.",
+      "technologies": 
+        [
+            {"description": "HTML"}, 
+            {"description": "CSS"}, 
+            {"description": "Javascript"}
+        ],
+      "status": "Finished",
+      "image": "./../assets/project_img.png",
+      "url": "http://resilient-manatee-185ac6.netlify.app/index.html",
+      "github": "https://github.com/arimakarz/Violeta-Makarz"
+    },
+    {
+        "id": 2,
+        "title": "Milan Libros",
+        "description": "Online books shop. Web design and Development.",
+        "technologies": 
+            [
+                {"description": "HTML"}, 
+                {"description": "CSS"}, 
+                {"description": "Javascript"}, 
+                {"description": "React"}
+            ],
+        "status": "Finished",
+        "image": "./../assets/project_img.png",
+        "url": "http://dapper-cactus-4953b4.netlify.app",
+        "github": "https://github.com/arimakarz/MilanLibros"
+    },
+    {
+        "id": 3,
+        "title": "Ecommerce",
+        "description": "API REST of an ecommerce. Backend (Node.js | Express). Web design and Development",
+        "technologies": 
+            [
+                {"description": "HTML"}, 
+                {"description": "CSS"}, 
+                {"description": "Javascript"}, 
+                {"description": "Node.js"}
+            ],
+        "status": "Finished",
+        "image": "./../assets/project_img.png",
+        "url": "http://backend-makarz-production.up.railway.app/sessions/login",
+        "github": "https://github.com/arimakarz/Backend-Makarz"
+    }
+]

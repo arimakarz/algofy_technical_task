@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Technical Task</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="./../../node_modules/liquidjs/dist/liquid.browser.min.js"></script>
+</head>
+
+<body>
+  <script>
+    const Liquid = window.liquidjs.Liquid
+    const engine = new Liquid({
+      extname: '.liquid',
+      cache: true
+    });
+    
+    fetch("./../data/data.json")
+    .then (response => response.json())
+    .then (result => {
+        projects = result;
+        console.log(projects)
+        engine
+        .renderFile('./../views/projectstemplate', { projects })
+        .then(function(html) {
+            document.body.innerHTML = html
+        })
+    })
+  </script>
+</body>
+
+</html>

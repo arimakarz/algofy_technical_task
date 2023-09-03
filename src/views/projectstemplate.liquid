@@ -1,0 +1,18 @@
+<h1>My projects</h1>
+<div class="projects-content">
+    {% if projects %}
+        {% for project in projects %}
+        {% assign project_technologies = project.technologies | map: 'description' %}
+        <div class="project-info">
+            <h3 class="project-title">{{ project.title | upcase }}</h3>
+            <p class="project-desc">{{ project_technologies | join: ', ' | upcase}}</p>
+            <p class="project-desc"><u>Description:</u> {{ project.description | truncate: 25 }}</p>
+            <a href={{ project.url }} target="_blank"><img src={{ project.image }} class="project-image"></a>
+            <a href={{ project.github }} target="_blank" class="project-link"><p class="project-desc">View on Github</p></a>
+        </div>
+        {% else %}
+            <p>Information is not available at the moment. Forgive the issue.</p>
+        {% endfor %}
+    {% endif %}
+</div>
+<a class="back-link" href="../pages/index.html">Back to website</a>

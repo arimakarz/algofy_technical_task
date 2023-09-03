@@ -1,0 +1,155 @@
+nav {
+  margin: 27px auto 0;
+  position: relative;
+  width: 360px;
+  height: 50px;
+  background-color: #65396a;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  width: 120px;
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+nav .start-home, nav a:nth-child(1):hover ~ .animation {
+  width: 120px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start, nav a:nth-child(2):hover ~ .animation {
+  width: 120px;
+  left: 120px;
+  background-color: #e74c3c;
+}
+nav .start, nav a:nth-child(3):hover ~ .animation {
+  width: 120px;
+  left: 240px;
+  background-color: #3498db;
+}
+
+body {
+  font-size: 12px;
+  font-family: sans-serif; 
+  background: #65396a;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Cherry Swash", cursive;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Cherry Swash", cursive;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 16px;
+  font-family: "Cherry Swash", cursive;
+}
+
+span {
+  color: #2BD6B4;
+}
+
+.about-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  animation-name: show-info;
+  animation-duration: 2s;
+}
+
+@keyframes show-info{
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+.about-text {
+   padding-top: 25px;
+}
+
+.profile-pic {
+  width: 75%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.collapsible {
+  /* background-color: #4f2f52; */
+  width: 75%;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: all 1s;
+}
+
+.active, .collapsible:hover {
+  font-size: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.content {
+  width: 75%;
+  padding: 25px 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.contact-form { 
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.contact-item {
+  display: inline;
+
+}
+
+/* -------- Media Queries --------- */
+
+@media (max-width: 1250px){ 
+  .profile-pic {
+    width: 150px;
+  }
+}
