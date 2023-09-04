@@ -117,14 +117,18 @@ span {
 .about-info {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  justify-content: space-around;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 5%;
   -webkit-animation-name: show-info;
           animation-name: show-info;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+}
+
+.my-info {
+  grid-column: 1/5;
+  grid-row: 2;
 }
 
 .about-text {
@@ -382,6 +386,9 @@ legend {
   .profile-pic {
     width: 150px;
   }
+  .content-text {
+    font-size: 20px;
+  }
   .hero-image {
     width: 80%;
     opacity: 60%;
@@ -394,8 +401,9 @@ legend {
   }
   .projects-content {
     width: 80%;
-    grid-template-columns: 1fr;
-    padding-left: 10%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    padding-left: 5%;
   }
   .project-info {
     width: 100%;
