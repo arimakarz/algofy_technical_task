@@ -464,6 +464,10 @@ legend {
   #hero {
     content: url("../assets/hero-img-mobile-min.png");
   }
+  .hero-button {
+    width: 60%;
+    margin-left: 20%;
+  }
   .contact-form {
     width: 80%;
     font-size: 24px;
