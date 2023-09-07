@@ -1,18 +1,34 @@
-<h1>My projects</h1>
+<div class="projects-menu">
+    <a class="back-link" href="../pages/index.html">{{'<< Back to website' | escape}}</a>
+    <h1 class="projects-title">MY PROJECTS</h1>
+</div>
 <div class="projects-content">
     {% if projects %}
         {% for project in projects %}
         {% assign project_technologies = project.technologies | map: 'description' %}
+        <h4 class="project-title">{{ project.title | upcase }}</h4>
         <div class="project-info">
-            <h3 class="project-title">{{ project.title | upcase }}</h3>
-            <p class="project-desc">{{ project_technologies | join: ', ' | upcase}}</p>
-            <p class="project-desc"><u>Description:</u> {{ project.description | truncate: 25 }}</p>
-            <a href={{ project.url }} target="_blank"><img src={{ project.image }} class="project-image"></a>
-            <a href={{ project.github }} target="_blank" class="project-link"><p class="project-desc">View on Github</p></a>
+            <div>
+                <p class="project-desc">{{ project_technologies | join: ', ' | upcase}}</p>
+                <!-- <p class="project-desc"> {{ project.description}}</p> -->
+                <p class="project-desc"> {{ project.description | strip | replace: ".", '<br>' | replace: "Development", "dev" | truncatewords: 10, '...'}}</p>
+            </div>
+            <div>
+                <a href={{ project.url }} target="_blank">
+                <p class="project-access">View website</p>
+                <img src={{ project.image }} class="project-image" alt="No picture">
+                </a>
+            </div>
+            <div>
+                <a href={{ project.github }} target="_blank" class="project-link">
+                    <p class="project-access">View on Github</p>
+                    <img src="../assets/github.png" class="github-image" alt="No picture"/>
+                </a>
+            </div>
         </div>
+        <hr>
         {% else %}
             <p>Information is not available at the moment. Forgive the issue.</p>
         {% endfor %}
     {% endif %}
 </div>
-<a class="back-link" href="../pages/index.html">Back to website</a>

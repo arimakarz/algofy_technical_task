@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Raleway:wght@200;400&display=swap");
 nav {
   margin: 15px auto 0;
   position: relative;
@@ -64,12 +65,28 @@ body {
   width: 60%;
   opacity: 60%;
   border-radius: 4px;
+  margin-top: 5%;
   margin-left: 20%;
 }
 
 .hero-title {
-  font-family: "Amatic SC", cursive;
-  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
+
+.hero-text {
+  margin-top: 15px;
+}
+
+.hero-link {
+  text-decoration: none;
+}
+
+.hero-button {
+  margin-top: 20px;
+  width: 40%;
+  height: 50px;
+  margin-left: 30%;
 }
 
 h1 {
@@ -79,7 +96,7 @@ h1 {
   font-size: 30px;
   color: black;
   text-shadow: 2px 2px 4px #000000;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 h3 {
@@ -88,7 +105,7 @@ h3 {
   text-align: center;
   font-size: 22px;
   color: black;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
@@ -97,7 +114,7 @@ p {
   font-size: 24px;
   color: black;
   letter-spacing: 2px;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer {
@@ -107,7 +124,7 @@ p {
   text-align: center;
   color: black;
   font-size: 16px;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 span {
@@ -129,6 +146,12 @@ span {
 .my-info {
   grid-column: 1/5;
   grid-row: 2;
+}
+
+.about-button {
+  width: 60%;
+  height: 45px;
+  margin: 10% 0 0 20%;
 }
 
 .about-text {
@@ -173,7 +196,7 @@ span {
   width: 50%;
   font-size: 24px;
   color: black;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
   border: none;
   border-radius: 18px;
   margin: 10% 25%;
@@ -203,7 +226,7 @@ legend {
   width: 100%;
   height: 30px;
   font-size: 20px;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
   border: 1px solid grey;
 }
 
@@ -211,24 +234,27 @@ legend {
   width: 100%;
   height: 100px;
   font-size: 18px;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Raleway", sans-serif;
   word-wrap: normal;
   resize: none;
+}
+
+.button, .form-button, .hero-button, .about-button {
+  background-color: white;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.button:hover, .form-button:hover, .hero-button:hover, .about-button:hover {
+  background-color: rgb(203, 203, 203);
+  cursor: pointer;
 }
 
 .form-button {
   width: 100px;
   height: 50px;
   margin-left: 40%;
-  background-color: white;
-  border: none;
-  font-family: "Cherry Swash", cursive;
-  font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.form-button:hover {
-  background-color: rgb(203, 203, 203);
-  cursor: pointer;
 }
 
 .form-error {
@@ -247,13 +273,13 @@ legend {
 }
 
 .back-link {
-  left: 45%;
-  position: relative;
   text-decoration: none;
   color: black;
   cursor: pointer;
   font-size: 20px;
-  font-family: "Cherry Swash", cursive;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  align-self: center;
 }
 .back-link:hover {
   color: rosybrown;
@@ -263,23 +289,43 @@ legend {
   width: 100%;
 }
 
+.projects-title {
+  font-size: 36px;
+  margin-top: 30px;
+  margin-right: 40%;
+}
+
+.projects-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .projects-content {
-  width: 80%;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  padding-left: 10%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+  padding-left: 5%;
 }
 
 .project-info {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 300px;
+  width: 100%;
+  height: 110%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-content: flex-end;
 }
 
 .project-title {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
+  -webkit-margin-after: auto;
+          margin-block-end: auto;
+  font-family: "Raleway", sans-serif;
 }
 
 .project-desc {
@@ -287,9 +333,16 @@ legend {
 }
 
 .project-image {
-  width: 50%;
+  width: 35%;
 }
 .project-image:hover {
+  transform: translate(20px, 10px) rotate(5deg) scale(1.1, 1.1);
+}
+
+.github-image {
+  width: 30%;
+}
+.github-image:hover {
   transform: translate(20px, 10px) rotate(5deg) scale(1.1, 1.1);
 }
 
@@ -300,6 +353,10 @@ legend {
 }
 .project-link:hover {
   color: rosybrown;
+}
+
+.project-access {
+  font-size: 16px;
 }
 
 /* -------- Keyframes --------- */
@@ -388,22 +445,38 @@ legend {
   }
   .content-text {
     font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 30px;
   }
   .hero-image {
-    width: 80%;
+    width: 100%;
     opacity: 60%;
-    margin-left: 10%;
+    margin-left: 0;
+  }
+  #collapsible {
+    text-decoration: underline;
+    color: blue;
+  }
+  .hero-link {
+    text-decoration: underline;
+  }
+  #hero {
+    content: url("../assets/hero-img-mobile-min.png");
   }
   .contact-form {
     width: 80%;
     font-size: 24px;
     margin: 10% 10%;
   }
+  .projects-title {
+    margin-left: 10%;
+  }
   .projects-content {
     width: 80%;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    padding-left: 5%;
+    row-gap: 15px;
   }
   .project-info {
     width: 100%;

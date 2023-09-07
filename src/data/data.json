@@ -33,7 +33,7 @@
     {
         "id": 3,
         "title": "Ecommerce",
-        "description": "API REST of an ecommerce. Backend (Node.js | Express). Web design and Development",
+        "description": "          API REST of an ecommerce. Backend (Node.js | Express). Web design and Development",
         "technologies": 
             [
                 {"description": "HTML"}, 

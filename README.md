@@ -4,9 +4,9 @@
 by Ariela Makarz
 
 ## Get started
-Public link: https://arimakarz.github.io/src/pages/index.html
+*[Public link]: (https://arimakarz.github.io/src/pages/index.html)
 
-Github: https://github.com/arimakarz/algofy_technical_task
+*[Github repository]: (https://github.com/arimakarz/algofy_technical_task)
 
 ## Pages
 
