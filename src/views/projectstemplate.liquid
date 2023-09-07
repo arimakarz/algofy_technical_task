@@ -10,8 +10,8 @@
         <div class="project-info">
             <div>
                 <p class="project-desc">{{ project_technologies | join: ', ' | upcase}}</p>
-                <!-- <p class="project-desc"> {{ project.description}}</p> -->
-                <p class="project-desc"> {{ project.description | strip | replace: ".", '<br>' | replace: "Development", "dev" | truncatewords: 10, '...'}}</p>
+                {% assign arr_description = project.description | strip | split: '.' %}
+                <p class="project-desc"> {{ arr_description | replace: ".", '<br>' | replace: "Development", "dev" | truncatewords: 10, '...'}}</p>
             </div>
             <div>
                 <a href={{ project.url }} target="_blank">
