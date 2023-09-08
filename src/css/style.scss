@@ -250,6 +250,7 @@ nav {
 
   .button {
     background-color: white;
+    color:rgba(0, 0, 0);
     border: none;
     font-family: $fontfamily;
     font-size: 18px;
@@ -435,8 +436,8 @@ nav {
     }
 
     .hero-button {
-      width: 60%;
-      margin-left: 20%;
+      width: 80%;
+      margin-left: 10%;
     }
 
     .contact-form { 
