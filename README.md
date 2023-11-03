@@ -1,12 +1,12 @@
 
-# Algofy - Tecnhnical Task
+# Portfolio
 
 by Ariela Makarz
 
 ## Get started
 - [Deployed site](https://arimakarz.github.io/src/pages/index.html)
 
-- [Github repository](https://github.com/arimakarz/algofy_technical_task)
+- [Github repository](https://github.com/arimakarz/portfolio-makarz)
 
 ## Pages
 
