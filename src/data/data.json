@@ -33,7 +33,7 @@
     {
         "id": 3,
         "title": "Ecommerce",
-        "description": "          API REST of an ecommerce. Backend (Nodejs | Express). Web design and Development",
+        "description": "API REST of an ecommerce. Backend (Nodejs | Express). Web design and Development",
         "technologies": 
             [
                 {"description": "HTML"}, 
@@ -45,5 +45,21 @@
         "image": "./../assets/project_img.png",
         "url": "http://backend-makarz-production.up.railway.app/sessions/login",
         "github": "https://github.com/arimakarz/Backend-Makarz"
+    },
+    {
+        "id": 4,
+        "title": "Tic tac toe game",
+        "description": "Tic tac toe game with React.js",
+        "technologies": 
+            [
+                {"description": "HTML"}, 
+                {"description": "CSS"}, 
+                {"description": "Javascript"}, 
+                {"description": "React.js"}
+            ],
+        "status": "Finished",
+        "image": "./../assets/project_img.png",
+        "url": "https://vermillion-toffee-db90e9.netlify.app/",
+        "github": "https://github.com/arimakarz/tic-tac-toe"
     }
 ]
